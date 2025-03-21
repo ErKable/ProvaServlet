@@ -53,10 +53,9 @@ public class AttoreImpl implements AttoreInterface {
     }
 
     @Override
-    public boolean updateActor(short idToModify, HashMap<String, String> whatToModify) throws SQLException{
+    public boolean updateActor(int idToModify, HashMap<String, String> whatToModify) throws SQLException{
         Attore a = selectActorById(idToModify);
         Connection c = ConnessioneDB.getConnection();
-
 
         ArrayList<String> columns = new ArrayList<>();
         ArrayList<String> values = new ArrayList<>();

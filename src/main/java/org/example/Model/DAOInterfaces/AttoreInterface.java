@@ -13,7 +13,7 @@ public interface AttoreInterface {
 
     public boolean insertActor(Attore a) throws SQLException;
 
-    public boolean updateActor(short idToModify, HashMap<String, String> whatToModify) throws SQLException;
+    public boolean updateActor(int idToModify, HashMap<String, String> whatToModify) throws SQLException;
 
     public List<Attore> getActorsByName(String firstName) throws SQLException;
 }
